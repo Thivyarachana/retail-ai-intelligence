@@ -600,7 +600,7 @@ Project facts:
 Do not invent dataset statistics. If a question needs a statistic not supplied above, explain that it should be calculated from the dataset.
 """
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model="gemini-3.8-flash",
                     contents=system + "\n\nUser question: " + prompt
                 )
                 answer = response.text
